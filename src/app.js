@@ -1,3 +1,19 @@
+let now = new Date();
+let hour = now.getHours();
+let minutes = now.getMinutes();
+let days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wedensday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+let day = days[now.getDay()];
+let currentDate = document.querySelector("#current");
+currentDate.innerHTML = "hi";
+
 function displayTemperature(response) {
   console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
